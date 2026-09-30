@@ -3,199 +3,532 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Revo — AI Red Teaming &amp; Security Engineering</title>
-  <meta name="description" content="Portfolio of Isaac 'Revo' Sherer: AI red teaming, security tooling, and enterprise systems engineering.">
-  <link rel="stylesheet" href="style.css">
+  <title>Revo — AI Red Team / Security Engineering</title>
+  <meta name="description" content="Isaac “Revo” Sherer. AI red teaming, security tooling, and production IT — manufacturing floor to NetSuite to breaking frontier models.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0d10">
+  <meta property="og:title" content="Revo — AI red team / security engineering">
+  <meta property="og:description" content="Floor → ERP → adversarial ML. Public portfolio of Isaac “Revo” Sherer.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/space-grotesk-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<nav>
-  <div class="wrap">
-    <a class="logo" href="#top">revo<span>@</span>portfolio</a>
-    <ul>
-      <li><a href="#about">about</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#enterprise">enterprise</a></li>
-      <li><a href="#creds">creds</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<header class="hero" id="top">
-  <div class="wrap">
-    <div class="prompt">$ whoami</div>
-    <h1>I break AI systems,<br>build the tooling around them,<br>and <em>run real production IT.</em></h1>
-    <p class="lede">
-      Isaac "Revo" Sherer. Self-taught security practitioner and IT/ERP specialist,
-      pivoting into AI red teaming. I ship working tools, not slide decks.
-    </p>
-    <div class="cta">
-      <a class="btn" href="#projects">see the work</a>
-      <a class="btn ghost" href="https://github.com/Revo445">github.com/Revo445</a>
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="mark" href="#top">REVO</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#record">Record</a></li>
+          <li><a href="#creds">Creds</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="status" data-state="open">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="status-label status-label-long" data-open="Available for red-team roles" data-closed="Engaged">Available for red-team roles</span>
+        <span class="status-label status-label-short" data-open="Available" data-closed="Engaged">Available</span>
+      </p>
     </div>
+  </header>
 
-    <div class="stats">
-      <div class="stat"><b>~40</b><span>frontier models broken on Gray Swan Arena</span></div>
-      <div class="stat"><b>7k+</b><span>lines in my autonomous HTB solver</span></div>
-      <div class="stat"><b>2019</b><span>in production IT &amp; operations since</span></div>
-      <div class="stat"><b>UFSP</b><span>Ubiquiti UniFi Full Stack Professional</span></div>
-    </div>
-  </div>
-</header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap">
+        <p class="filehead">
+          <span>Isaac Sherer · Public portfolio</span>
+          <span>Sioux City area</span>
+        </p>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">Isaac “Revo” Sherer</h1>
+            <p class="role">AI red team / security engineering</p>
+            <p class="arc-line">Floor → ERP → adversarial ML.</p>
+            <p class="lede">Manufacturing floor to sole NetSuite Advanced Manufacturing administrator. Now breaking frontier models and building the tooling around that work.</p>
+            <div class="cta">
+              <a class="btn" href="#work">View work</a>
+              <a class="text-link" href="#contact">Contact</a>
+            </div>
+          </div>
+          <aside class="cover" aria-label="On record">
+            <p class="kicker">On record</p>
+            <ul>
+              <li><b>~40</b><span>frontier models broken on Gray Swan Arena</span></li>
+              <li><b>7k+</b><span>lines in the autonomous HTB solver</span></li>
+              <li><b>2019</b><span>in production IT and operations since</span></li>
+              <li><b>UFSP</b><span>Ubiquiti UniFi Full Stack Professional</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-<section id="about" class="about">
-  <div class="wrap">
-    <h2>about</h2>
-    <div class="section-title">Operator background, attacker mindset</div>
-    <p>
-      I started on a manufacturing floor, moved into team leadership, and now run IT and ERP
-      as the sole NetSuite Advanced Manufacturing administrator. That means I've lived on both
-      sides of the keyboard: I know how systems actually get used, misused, and broken inside a real business.
-    </p>
-    <p>
-      On the side, I compete in AI red teaming, build security tooling, and run my own detection
-      lab. I have no formal security certs yet. OSCP and HTB CWES are the active targets. What I do have
-      is a public track record and code you can read.
-    </p>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <h2>projects</h2>
-    <div class="section-title">Things I've built</div>
-
-    <div class="grid">
-
-      <article class="card">
-        <span class="badge ok">competition</span>
-        <h3>Gray Swan Arena — AI Red Teaming</h3>
-        <p>Competitive jailbreak and prompt-injection work against frontier models. Roughly 40 models broken across tournaments. Built a journal tool to turn attack attempts into repeatable technique.</p>
-        <div class="tags"><span>prompt injection</span><span>jailbreaks</span><span>agent attacks</span></div>
-      </article>
-
-      <article class="card">
-        <span class="badge ok">tool</span>
-        <h3>Red-Team Journal CLI</h3>
-        <p>Logs attack trajectories to JSONL, classifies failures with a taxonomy, and coaches the next attempt with a Socratic layer instead of just storing notes.</p>
-        <div class="tags"><span>Python</span><span>JSONL</span><span>failure taxonomy</span></div>
-      </article>
-
-      <article class="card">
-        <span class="badge ok">tool</span>
-        <h3>Autonomous HTB Solver</h3>
-        <p>~7,000-line pipeline that drives Hack The Box machines and CTFs with a local LLM: HTB API v4, Selenium, category-aware prompts, a 5-stage machine attack pipeline, and a multi-platform CTF adapter.</p>
-        <div class="tags"><span>Python</span><span>Ollama</span><span>Selenium</span><span>HTB API</span></div>
-      </article>
-
-      <article class="card">
-        <span class="badge ok">infrastructure</span>
-        <h3>Home Network Detection Stack</h3>
-        <p>Passive, advisory monitoring platform: Suricata IDS, flow monitoring, asset discovery, daily CVE watch with CISA KEV, port-drift scanning, and a local-LLM triage brain. Grafana dashboards, ntfy alerts, all in Docker Compose.</p>
-        <div class="tags"><span>Suricata</span><span>Vector</span><span>FastAPI</span><span>Grafana</span><span>Docker</span></div>
-      </article>
-
-      <article class="card">
-        <span class="badge">in progress</span>
-        <h3>Offline AI Assistant Product</h3>
-        <p>Portable, fully offline AI app with consumer and Pro tiers: CustomTkinter GUI, llama-cpp-python inference, PyInstaller packaging.</p>
-        <div class="tags"><span>Python</span><span>llama.cpp</span><span>PyInstaller</span></div>
-      </article>
-
-      <article class="card">
-        <span class="badge">prototype</span>
-        <h3>Local Agentic Coding Extension</h3>
-        <p>VS Code extension that runs a local GGUF model as a coding agent: OpenAI-compatible endpoint, XML tool protocol, streaming, file and shell tools, and an approval flow before anything executes.</p>
-        <div class="tags"><span>TypeScript</span><span>VS Code API</span><span>GGUF</span></div>
-      </article>
-
-      <article class="card">
-        <span class="badge">testbed</span>
-        <h3>hauntstack.xyz</h3>
-        <p>Security SaaS and web-app testing testbed used to practice building, hardening, and attacking a real deployed site.</p>
-        <div class="tags"><span>web app testing</span><span>SaaS</span></div>
-      </article>
-
-      <article class="card">
-        <span class="badge">study</span>
-        <h3>HTB CWES Study Guide</h3>
-        <p>Full guide across all 20 modules with a 12-week plan and exam logistics, plus notes on where web attack surface overlaps with LLM-integrated apps.</p>
-        <div class="tags"><span>web pentesting</span><span>CWES</span></div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section id="enterprise">
-  <div class="wrap">
-    <h2>enterprise</h2>
-    <div class="section-title">Production systems work</div>
-    <p style="max-width:720px;color:#b7c2cb;margin-bottom:28px">
-      Real business systems, real users, real uptime requirements. Specifics are kept high level
-      to respect confidentiality; sanitized case studies below.
-    </p>
-
-    <div class="grid">
-      <article class="card">
-        <div class="shot">[ screenshot placeholder ]</div>
-        <h3>NetSuite Advanced Manufacturing</h3>
-        <p>Sole administrator and implementer across multiple departments, including ERP training and documentation.</p>
-        <div class="tags"><span>NetSuite</span><span>ERP</span><span>manufacturing</span></div>
-      </article>
-
-      <article class="card">
-        <div class="shot">[ code sample placeholder ]</div>
-        <h3>SuiteScript Automation</h3>
-        <p>Custom JavaScript development to automate workflows and close gaps that stock ERP configuration can't.</p>
-        <div class="tags"><span>SuiteScript</span><span>JavaScript</span></div>
-      </article>
-
-      <article class="card">
-        <div class="shot">[ diagram placeholder ]</div>
-        <h3>Company Networking</h3>
-        <p>Own the network end to end on Ubiquiti UniFi, including PoE network extension.</p>
-        <div class="tags"><span>UniFi</span><span>PoE</span><span>networking</span></div>
-      </article>
-    </div>
-
-    <div style="margin-top:44px">
-      <div class="timeline">
-        <div class="tl-item"><span class="when">2024 – present</span><b>IT / ERP Specialist</b>Innovive, North Sioux City, SD</div>
-        <div class="tl-item"><span class="when">2020 – 2024</span><b>Team Leader</b>Innovive</div>
-        <div class="tl-item"><span class="when">2019 – 2020</span><b>Production Operator</b>Innovive</div>
+    <div class="arc-band">
+      <div class="wrap reveal">
+        <div class="arc" role="group" aria-label="Filter the case file by career chapter">
+          <button type="button" class="step" data-era="floor" aria-pressed="false" aria-controls="work-grid">
+            <span class="step-id">01</span>
+            <span class="step-name">Floor ops</span>
+            <span class="step-meta">2019–2024 · Production operator to team lead</span>
+          </button>
+          <button type="button" class="step" data-era="erp" aria-pressed="false" aria-controls="work-grid">
+            <span class="step-id">02</span>
+            <span class="step-name">NetSuite / UFSP</span>
+            <span class="step-meta">2024–present · Sole AM admin and UniFi</span>
+          </button>
+          <button type="button" class="step" data-era="redteam" aria-pressed="true" aria-controls="work-grid">
+            <span class="step-id">03</span>
+            <span class="step-name">AI red team</span>
+            <span class="step-meta">Current · Models, tooling, detection</span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<section id="creds">
-  <div class="wrap">
-    <h2>creds</h2>
-    <div class="section-title">Credentials and where I'm headed</div>
-    <div class="creds">
-      <div class="card"><span class="badge ok">earned</span><h3>UniFi Full Stack Professional</h3><p>Ubiquiti UFSP, 2025.</p></div>
-      <div class="card"><span class="badge">studying</span><h3>OSCP</h3><p>Active goal.</p></div>
-      <div class="card"><span class="badge">studying</span><h3>HTB CWES</h3><p>Active goal.</p></div>
+    <section id="work" class="work band reveal" aria-labelledby="work-title">
+      <div class="wrap">
+        <p id="filter-live" class="sr" aria-live="polite" aria-atomic="true"></p>
+        <div class="section-head">
+          <div>
+            <p class="kicker">01</p>
+            <h2 id="work-title">Selected work</h2>
+            <p class="section-lede">On the side, I compete in AI red teaming, build security tooling, and run my own detection lab.</p>
+          </div>
+          <p class="chapter" id="chapter-label">Chapter · AI red team</p>
+        </div>
+
+        <noscript>
+          <p class="section-lede">JavaScript is off, so the chapter filter is inactive and every case is shown.</p>
+          <style>
+            .era-slot[hidden] { display: block !important; }
+            .log-block[hidden] { display: block !important; }
+          </style>
+        </noscript>
+
+        <div class="work-grid" id="work-grid" data-count="8">
+
+          <article class="case case-lead era-slot" data-era="redteam">
+            <div class="case-body">
+              <ul class="chips">
+                <li><span class="chip chip-high">SEVERITY:HIGH</span></li>
+                <li><span class="chip">DOMAIN:LLM</span></li>
+                <li><span class="chip">STATUS:ACTIVE</span></li>
+              </ul>
+              <h3>Gray Swan Arena</h3>
+              <p class="outcome">Competitive jailbreaks and prompt injection against frontier models. Roughly 40 models broken across tournaments.</p>
+              <ul class="stack">
+                <li>prompt injection</li>
+                <li>jailbreaks</li>
+                <li>agent attacks</li>
+              </ul>
+              <details class="notes">
+                <summary>Case notes</summary>
+                <ul class="note-list">
+                  <li><span class="nk">Method</span><span>Competitive jailbreaks, prompt injection, and agent attacks against frontier models.</span></li>
+                  <li><span class="nk">Finding</span><span>Roughly 40 models broken across tournaments.</span></li>
+                  <li><span class="nk">Impact</span><span>Attack attempts turned into repeatable technique with a journal tool built for the work.</span></li>
+                </ul>
+              </details>
+            </div>
+            <p class="case-metric">
+              <strong>~40</strong>
+              <span>frontier models broken on Gray Swan Arena</span>
+            </p>
+          </article>
+
+          <article class="case era-slot" data-era="redteam">
+            <ul class="chips">
+              <li><span class="chip chip-med">SEVERITY:MED</span></li>
+              <li><span class="chip">DOMAIN:LLM</span></li>
+              <li><span class="chip">STATUS:BUILT</span></li>
+            </ul>
+            <h3>Red-Team Journal CLI</h3>
+            <p class="outcome">Logs attack trajectories to JSONL, classifies failures with a taxonomy, and coaches the next attempt with a Socratic layer.</p>
+            <ul class="stack">
+              <li>Python</li>
+              <li>JSONL</li>
+              <li>failure taxonomy</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Method</span><span>Logs attack trajectories to JSONL and classifies failures with a taxonomy.</span></li>
+                <li><span class="nk">Impact</span><span>A Socratic layer coaches the next attempt instead of only storing notes.</span></li>
+                <li><span class="nk">Use</span><span>Built so Gray Swan attack attempts become repeatable technique.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="redteam">
+            <ul class="chips">
+              <li><span class="chip chip-med">SEVERITY:MED</span></li>
+              <li><span class="chip">DOMAIN:OFFSEC</span></li>
+              <li><span class="chip">STATUS:BUILT</span></li>
+            </ul>
+            <h3>Autonomous HTB solver</h3>
+            <p class="outcome">Local-LLM pipeline for Hack The Box machines and CTFs. About 7,000 lines: API v4, Selenium, and a 5-stage attack flow.</p>
+            <ul class="stack">
+              <li>Python</li>
+              <li>Ollama</li>
+              <li>Selenium</li>
+              <li>HTB API</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Method</span><span>A local LLM drives Hack The Box machines and CTFs.</span></li>
+                <li><span class="nk">Stack</span><span>HTB API v4, Selenium, category-aware prompts, a 5-stage machine attack pipeline, and a multi-platform CTF adapter.</span></li>
+                <li><span class="nk">Scale</span><span>About 7,000 lines.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="redteam">
+            <ul class="chips">
+              <li><span class="chip chip-med">SEVERITY:MED</span></li>
+              <li><span class="chip">DOMAIN:DETECT</span></li>
+              <li><span class="chip">STATUS:BUILT</span></li>
+            </ul>
+            <h3>Home network detection stack</h3>
+            <p class="outcome">Passive, advisory monitoring for a home network. Suricata, a KEV-backed CVE watch, and a local-LLM triage brain.</p>
+            <ul class="stack">
+              <li>Suricata</li>
+              <li>Vector</li>
+              <li>FastAPI</li>
+              <li>Grafana</li>
+              <li>Docker</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Method</span><span>Passive, advisory monitoring: Suricata IDS, flow monitoring, and asset discovery.</span></li>
+                <li><span class="nk">Watch</span><span>Daily CVE watch with CISA KEV, plus port-drift scanning.</span></li>
+                <li><span class="nk">Delivery</span><span>Local-LLM triage. Grafana dashboards and ntfy alerts, packaged in Docker Compose.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="redteam">
+            <ul class="chips">
+              <li><span class="chip">SEVERITY:INFO</span></li>
+              <li><span class="chip">DOMAIN:PRODUCT</span></li>
+              <li><span class="chip">STATUS:WIP</span></li>
+            </ul>
+            <h3>Offline AI assistant</h3>
+            <p class="outcome">Portable, fully offline assistant with consumer and Pro tiers. In progress: CustomTkinter, llama.cpp, and PyInstaller.</p>
+            <ul class="stack">
+              <li>Python</li>
+              <li>llama.cpp</li>
+              <li>PyInstaller</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Method</span><span>Fully offline inference, packaged as a portable app.</span></li>
+                <li><span class="nk">Scope</span><span>Consumer and Pro tiers.</span></li>
+                <li><span class="nk">Stack</span><span>CustomTkinter GUI, llama-cpp-python, PyInstaller.</span></li>
+                <li><span class="nk">Status</span><span>In progress.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="redteam">
+            <ul class="chips">
+              <li><span class="chip">SEVERITY:INFO</span></li>
+              <li><span class="chip">DOMAIN:AGENT</span></li>
+              <li><span class="chip">STATUS:PROTO</span></li>
+            </ul>
+            <h3>Local agentic coding extension</h3>
+            <p class="outcome">VS Code extension that runs a local GGUF model as a coding agent. File and shell tools wait on an approval flow.</p>
+            <ul class="stack">
+              <li>TypeScript</li>
+              <li>VS Code API</li>
+              <li>GGUF</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Method</span><span>Local GGUF model behind an OpenAI-compatible endpoint.</span></li>
+                <li><span class="nk">Tools</span><span>XML tool protocol, streaming, plus file and shell tools.</span></li>
+                <li><span class="nk">Control</span><span>Approval flow before anything executes.</span></li>
+                <li><span class="nk">Status</span><span>Prototype.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="redteam">
+            <ul class="chips">
+              <li><span class="chip">SEVERITY:INFO</span></li>
+              <li><span class="chip">DOMAIN:WEB</span></li>
+              <li><span class="chip">STATUS:TESTBED</span></li>
+            </ul>
+            <h3>hauntstack.xyz</h3>
+            <p class="outcome">Security SaaS and web-app testing testbed for practicing build, harden, and attack work on a real deployed site. <a href="https://hauntstack.xyz">hauntstack.xyz</a></p>
+            <ul class="stack">
+              <li>web app testing</li>
+              <li>SaaS</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Use</span><span>Practice building, hardening, and attacking a deployed site.</span></li>
+                <li><span class="nk">Form</span><span>Security SaaS and web-app testing testbed.</span></li>
+                <li><span class="nk">Site</span><span>hauntstack.xyz</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="redteam">
+            <ul class="chips">
+              <li><span class="chip">SEVERITY:INFO</span></li>
+              <li><span class="chip">DOMAIN:WEB</span></li>
+              <li><span class="chip">STATUS:STUDY</span></li>
+            </ul>
+            <h3>HTB CWES study guide</h3>
+            <p class="outcome">Full guide across all 20 modules, with a 12-week plan and exam logistics, plus notes where web attacks meet LLM-integrated apps.</p>
+            <ul class="stack">
+              <li>web pentesting</li>
+              <li>CWES</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Scope</span><span>All 20 CWES modules.</span></li>
+                <li><span class="nk">Plan</span><span>12-week plan and exam logistics.</span></li>
+                <li><span class="nk">Bridge</span><span>Notes on where web attack surface overlaps with LLM-integrated apps.</span></li>
+                <li><span class="nk">Status</span><span>Study material toward the HTB CWES goal.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="floor" hidden>
+            <ul class="chips">
+              <li><span class="chip">DOMAIN:OPS</span></li>
+              <li><span class="chip">STATUS:RECORD</span></li>
+            </ul>
+            <h3>Manufacturing floor to team lead</h3>
+            <p class="outcome">Production operator from 2019 to 2020, then team leader through 2024, at Innovive. The years before IT and ERP.</p>
+            <ul class="stack">
+              <li>manufacturing</li>
+              <li>team leadership</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Record</span><span>2019–2020, production operator at Innovive.</span></li>
+                <li><span class="nk">Record</span><span>2020–2024, team leader at Innovive.</span></li>
+                <li><span class="nk">Context</span><span>Started on a manufacturing floor and moved into team leadership before running IT and ERP.</span></li>
+                <li><span class="nk">Impact</span><span>Lived how systems actually get used, misused, and broken inside a real business.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="erp" hidden>
+            <ul class="chips">
+              <li><span class="chip">DOMAIN:ERP</span></li>
+              <li><span class="chip">STATUS:PRODUCTION</span></li>
+            </ul>
+            <h3>NetSuite Advanced Manufacturing</h3>
+            <p class="outcome">Sole administrator and implementer across multiple departments, including ERP training and documentation.</p>
+            <ul class="stack">
+              <li>NetSuite</li>
+              <li>ERP</li>
+              <li>manufacturing</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Role</span><span>Sole NetSuite Advanced Manufacturing administrator and implementer.</span></li>
+                <li><span class="nk">Scope</span><span>Multiple departments, plus ERP training and documentation.</span></li>
+                <li><span class="nk">Limit</span><span>Specifics kept high level to respect confidentiality.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="erp" hidden>
+            <ul class="chips">
+              <li><span class="chip">DOMAIN:ERP</span></li>
+              <li><span class="chip">STATUS:PRODUCTION</span></li>
+            </ul>
+            <h3>SuiteScript automation</h3>
+            <p class="outcome">Custom JavaScript inside NetSuite to automate workflows and close gaps stock ERP configuration can’t.</p>
+            <ul class="stack">
+              <li>SuiteScript</li>
+              <li>JavaScript</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Method</span><span>Custom SuiteScript (JavaScript) inside NetSuite.</span></li>
+                <li><span class="nk">Gap</span><span>Stock ERP configuration left workflow gaps.</span></li>
+                <li><span class="nk">Impact</span><span>Automation covers work the stock setup doesn’t.</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="case era-slot" data-era="erp" hidden>
+            <ul class="chips">
+              <li><span class="chip">DOMAIN:NET</span></li>
+              <li><span class="chip">STATUS:PRODUCTION</span></li>
+            </ul>
+            <h3>Company networking</h3>
+            <p class="outcome">Network owned end to end on Ubiquiti UniFi, including PoE extension. UFSP earned in 2025.</p>
+            <ul class="stack">
+              <li>UniFi</li>
+              <li>PoE</li>
+              <li>networking</li>
+            </ul>
+            <details class="notes">
+              <summary>Case notes</summary>
+              <ul class="note-list">
+                <li><span class="nk">Scope</span><span>End-to-end company network on Ubiquiti UniFi.</span></li>
+                <li><span class="nk">Work</span><span>Includes PoE network extension.</span></li>
+                <li><span class="nk">Cred</span><span>UniFi Full Stack Professional, 2025.</span></li>
+              </ul>
+            </details>
+          </article>
+
+        </div>
+
+        <aside class="ticket" aria-label="Sample finding">
+          <div class="ticket-gutter" aria-hidden="true"></div>
+          <div class="ticket-body">
+            <p class="kicker">Sample finding</p>
+            <div class="log-block" data-era="redteam">
+              <p class="log-line"><span class="log-key">gs-arena</span> result=models_broken count≈40 vectors=jailbreak, prompt-injection, agent</p>
+              <p class="log-line"><span class="log-key">htb-solver</span> result=pipeline loc≈7000 stages=5 api=htb-v4 llm=local</p>
+            </div>
+            <div class="log-block" data-era="erp" hidden>
+              <p class="log-line"><span class="log-key">netsuite-am</span> role=sole-admin scope=multi-department includes=training, documentation</p>
+              <p class="log-line"><span class="log-key">unifi</span> scope=end-to-end work=poe-extension cred=ufsp year=2025</p>
+            </div>
+            <div class="log-block" data-era="floor" hidden>
+              <p class="log-line"><span class="log-key">innovive</span> role=production-operator years=2019–2020</p>
+              <p class="log-line"><span class="log-key">innovive</span> role=team-leader years=2020–2024</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="record" class="record band reveal" aria-labelledby="record-title">
+      <div class="wrap">
+        <p class="kicker">02</p>
+        <h2 id="record-title">Enterprise record</h2>
+        <p class="section-lede">I started on a manufacturing floor, moved into team leadership, and now run IT and ERP as the sole NetSuite Advanced Manufacturing administrator. That means I’ve lived on both sides of the keyboard: I know how systems actually get used, misused, and broken inside a real business.</p>
+        <p class="section-lede">Real business systems, real users, real uptime requirements. Specifics are kept high level to respect confidentiality. Case notes for NetSuite, SuiteScript, and UniFi sit in Selected work, under the NetSuite / UFSP chapter.</p>
+
+        <ol class="timeline">
+          <li class="is-now">
+            <p class="when">2024 – present</p>
+            <h3>IT / ERP Specialist</h3>
+            <p class="where">Innovive, North Sioux City, SD</p>
+          </li>
+          <li>
+            <p class="when">2020 – 2024</p>
+            <h3>Team Leader</h3>
+            <p class="where">Innovive</p>
+          </li>
+          <li>
+            <p class="when">2019 – 2020</p>
+            <h3>Production Operator</h3>
+            <p class="where">Innovive</p>
+          </li>
+        </ol>
+
+        <div class="frames">
+          <figure class="mount">
+            <div class="mount-art ledger" aria-hidden="true">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <figcaption>
+              <span class="kicker">Placeholder</span>
+              NetSuite Advanced Manufacturing. Sanitized screenshot not published.
+            </figcaption>
+          </figure>
+          <figure class="mount">
+            <div class="mount-art script" aria-hidden="true">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <figcaption>
+              <span class="kicker">Placeholder</span>
+              SuiteScript. Code sample withheld for confidentiality.
+            </figcaption>
+          </figure>
+          <figure class="mount">
+            <div class="mount-art net" aria-hidden="true">
+              <svg viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
+                <line x1="48" y1="60" x2="160" y2="28" stroke="currentColor" stroke-width="1"/>
+                <line x1="48" y1="60" x2="160" y2="92" stroke="currentColor" stroke-width="1"/>
+                <line x1="160" y1="28" x2="272" y2="60" stroke="currentColor" stroke-width="1"/>
+                <line x1="160" y1="92" x2="272" y2="60" stroke="currentColor" stroke-width="1"/>
+                <circle cx="48" cy="60" r="4" fill="currentColor"/>
+                <circle cx="160" cy="28" r="4" fill="currentColor"/>
+                <circle cx="160" cy="92" r="4" fill="currentColor"/>
+                <circle cx="272" cy="60" r="4" fill="#e8ecf1"/>
+              </svg>
+            </div>
+            <figcaption>
+              <span class="kicker">Placeholder</span>
+              UniFi network. Not a diagram of the live topology.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="creds" class="creds band reveal" aria-labelledby="creds-title">
+      <div class="wrap">
+        <p class="kicker">03</p>
+        <h2 id="creds-title">Credentials</h2>
+        <p class="section-lede">I have no formal security certs yet. OSCP and HTB CWES are the active targets. What I do have is a public track record and code you can read.</p>
+        <ul class="cred-grid">
+          <li class="cred">
+            <span class="chip chip-pass">EARNED</span>
+            <h3>UniFi Full Stack Professional</h3>
+            <p>Ubiquiti UFSP, 2025.</p>
+          </li>
+          <li class="cred">
+            <span class="chip chip-med">STUDYING</span>
+            <h3>OSCP</h3>
+            <p>Active goal.</p>
+          </li>
+          <li class="cred">
+            <span class="chip chip-med">STUDYING</span>
+            <h3>HTB CWES</h3>
+            <p>Active goal.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact band reveal" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="kicker">04</p>
+        <h2 id="contact-title">Open to junior AI red teaming and offensive security roles, remote or in the Sioux City area.</h2>
+        <a class="btn" href="https://github.com/Revo445" rel="me">github.com/Revo445</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap">
+      <p>© 2026 Isaac “Revo” Sherer</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section id="contact">
-  <div class="wrap">
-    <h2>contact</h2>
-    <div class="section-title">Let's talk</div>
-    <p style="color:#b7c2cb;margin-bottom:22px">Open to junior AI red teaming and offensive security roles, remote or in the Sioux City area.</p>
-    <div class="cta">
-      <a class="btn" href="https://github.com/Revo445">github.com/Revo445</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">&copy; 2026 Isaac "Revo" Sherer. Draft v0.1</div>
-</footer>
-
+  <script src="app.js"></script>
 </body>
 </html>
