@@ -1,6 +1,6 @@
-# Isaac Sherer — Portfolio
+# Isaac S. — Portfolio
 
-Public dossier for Isaac Sherer ([GitHub](https://github.com/Revo445)). Static HTML, CSS, and a small script. No build step, no backend.
+Public dossier for Isaac S. ([GitHub](https://github.com/Revo445)). Static HTML, CSS, and a small script. No build step, no backend.
 
 The page is a case file: floor ops → NetSuite / UFSP → AI red team. It is meant for junior AI red team and offensive security roles.
 

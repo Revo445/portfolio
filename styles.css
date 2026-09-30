@@ -216,6 +216,7 @@ a:visited {
   letter-spacing: -0.04em;
   text-decoration: none;
   color: var(--text);
+  white-space: nowrap;
 }
 
 .nav-links {
