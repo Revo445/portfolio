@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revo — AI Red Teaming &amp; Security Engineering</title>
+  <meta name="description" content="Portfolio of Isaac 'Revo' Sherer: AI red teaming, security tooling, and enterprise systems engineering.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">revo<span>@</span>portfolio</a>
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#enterprise">enterprise</a></li>
+      <li><a href="#creds">creds</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="prompt">$ whoami</div>
+    <h1>I break AI systems,<br>build the tooling around them,<br>and <em>run real production IT.</em></h1>
+    <p class="lede">
+      Isaac "Revo" Sherer. Self-taught security practitioner and IT/ERP specialist,
+      pivoting into AI red teaming. I ship working tools, not slide decks.
+    </p>
+    <div class="cta">
+      <a class="btn" href="#projects">see the work</a>
+      <a class="btn ghost" href="https://github.com/Revo445">github.com/Revo445</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>~40</b><span>frontier models broken on Gray Swan Arena</span></div>
+      <div class="stat"><b>7k+</b><span>lines in my autonomous HTB solver</span></div>
+      <div class="stat"><b>2019</b><span>in production IT &amp; operations since</span></div>
+      <div class="stat"><b>UFSP</b><span>Ubiquiti UniFi Full Stack Professional</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2>about</h2>
+    <div class="section-title">Operator background, attacker mindset</div>
+    <p>
+      I started on a manufacturing floor, moved into team leadership, and now run IT and ERP
+      as the sole NetSuite Advanced Manufacturing administrator. That means I've lived on both
+      sides of the keyboard: I know how systems actually get used, misused, and broken inside a real business.
+    </p>
+    <p>
+      On the side, I compete in AI red teaming, build security tooling, and run my own detection
+      lab. I have no formal security certs yet. OSCP and HTB CWES are the active targets. What I do have
+      is a public track record and code you can read.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>projects</h2>
+    <div class="section-title">Things I've built</div>
+
+    <div class="grid">
+
+      <article class="card">
+        <span class="badge ok">competition</span>
+        <h3>Gray Swan Arena — AI Red Teaming</h3>
+        <p>Competitive jailbreak and prompt-injection work against frontier models. Roughly 40 models broken across tournaments. Built a journal tool to turn attack attempts into repeatable technique.</p>
+        <div class="tags"><span>prompt injection</span><span>jailbreaks</span><span>agent attacks</span></div>
+      </article>
+
+      <article class="card">
+        <span class="badge ok">tool</span>
+        <h3>Red-Team Journal CLI</h3>
+        <p>Logs attack trajectories to JSONL, classifies failures with a taxonomy, and coaches the next attempt with a Socratic layer instead of just storing notes.</p>
+        <div class="tags"><span>Python</span><span>JSONL</span><span>failure taxonomy</span></div>
+      </article>
+
+      <article class="card">
+        <span class="badge ok">tool</span>
+        <h3>Autonomous HTB Solver</h3>
+        <p>~7,000-line pipeline that drives Hack The Box machines and CTFs with a local LLM: HTB API v4, Selenium, category-aware prompts, a 5-stage machine attack pipeline, and a multi-platform CTF adapter.</p>
+        <div class="tags"><span>Python</span><span>Ollama</span><span>Selenium</span><span>HTB API</span></div>
+      </article>
+
+      <article class="card">
+        <span class="badge ok">infrastructure</span>
+        <h3>Home Network Detection Stack</h3>
+        <p>Passive, advisory monitoring platform: Suricata IDS, flow monitoring, asset discovery, daily CVE watch with CISA KEV, port-drift scanning, and a local-LLM triage brain. Grafana dashboards, ntfy alerts, all in Docker Compose.</p>
+        <div class="tags"><span>Suricata</span><span>Vector</span><span>FastAPI</span><span>Grafana</span><span>Docker</span></div>
+      </article>
+
+      <article class="card">
+        <span class="badge">in progress</span>
+        <h3>Offline AI Assistant Product</h3>
+        <p>Portable, fully offline AI app with consumer and Pro tiers: CustomTkinter GUI, llama-cpp-python inference, PyInstaller packaging.</p>
+        <div class="tags"><span>Python</span><span>llama.cpp</span><span>PyInstaller</span></div>
+      </article>
+
+      <article class="card">
+        <span class="badge">prototype</span>
+        <h3>Local Agentic Coding Extension</h3>
+        <p>VS Code extension that runs a local GGUF model as a coding agent: OpenAI-compatible endpoint, XML tool protocol, streaming, file and shell tools, and an approval flow before anything executes.</p>
+        <div class="tags"><span>TypeScript</span><span>VS Code API</span><span>GGUF</span></div>
+      </article>
+
+      <article class="card">
+        <span class="badge">testbed</span>
+        <h3>hauntstack.xyz</h3>
+        <p>Security SaaS and web-app testing testbed used to practice building, hardening, and attacking a real deployed site.</p>
+        <div class="tags"><span>web app testing</span><span>SaaS</span></div>
+      </article>
+
+      <article class="card">
+        <span class="badge">study</span>
+        <h3>HTB CWES Study Guide</h3>
+        <p>Full guide across all 20 modules with a 12-week plan and exam logistics, plus notes on where web attack surface overlaps with LLM-integrated apps.</p>
+        <div class="tags"><span>web pentesting</span><span>CWES</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="enterprise">
+  <div class="wrap">
+    <h2>enterprise</h2>
+    <div class="section-title">Production systems work</div>
+    <p style="max-width:720px;color:#b7c2cb;margin-bottom:28px">
+      Real business systems, real users, real uptime requirements. Specifics are kept high level
+      to respect confidentiality; sanitized case studies below.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <div class="shot">[ screenshot placeholder ]</div>
+        <h3>NetSuite Advanced Manufacturing</h3>
+        <p>Sole administrator and implementer across multiple departments, including ERP training and documentation.</p>
+        <div class="tags"><span>NetSuite</span><span>ERP</span><span>manufacturing</span></div>
+      </article>
+
+      <article class="card">
+        <div class="shot">[ code sample placeholder ]</div>
+        <h3>SuiteScript Automation</h3>
+        <p>Custom JavaScript development to automate workflows and close gaps that stock ERP configuration can't.</p>
+        <div class="tags"><span>SuiteScript</span><span>JavaScript</span></div>
+      </article>
+
+      <article class="card">
+        <div class="shot">[ diagram placeholder ]</div>
+        <h3>Company Networking</h3>
+        <p>Own the network end to end on Ubiquiti UniFi, including PoE network extension.</p>
+        <div class="tags"><span>UniFi</span><span>PoE</span><span>networking</span></div>
+      </article>
+    </div>
+
+    <div style="margin-top:44px">
+      <div class="timeline">
+        <div class="tl-item"><span class="when">2024 – present</span><b>IT / ERP Specialist</b>Innovive, North Sioux City, SD</div>
+        <div class="tl-item"><span class="when">2020 – 2024</span><b>Team Leader</b>Innovive</div>
+        <div class="tl-item"><span class="when">2019 – 2020</span><b>Production Operator</b>Innovive</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="creds">
+  <div class="wrap">
+    <h2>creds</h2>
+    <div class="section-title">Credentials and where I'm headed</div>
+    <div class="creds">
+      <div class="card"><span class="badge ok">earned</span><h3>UniFi Full Stack Professional</h3><p>Ubiquiti UFSP, 2025.</p></div>
+      <div class="card"><span class="badge">studying</span><h3>OSCP</h3><p>Active goal.</p></div>
+      <div class="card"><span class="badge">studying</span><h3>HTB CWES</h3><p>Active goal.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>contact</h2>
+    <div class="section-title">Let's talk</div>
+    <p style="color:#b7c2cb;margin-bottom:22px">Open to junior AI red teaming and offensive security roles, remote or in the Sioux City area.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/Revo445">github.com/Revo445</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; 2026 Isaac "Revo" Sherer. Draft v0.1</div>
+</footer>
+
+</body>
+</html>
