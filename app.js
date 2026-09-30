@@ -48,6 +48,14 @@ function setEra(era, silent) {
   if (live && !silent) {
     const noun = count === 1 ? "case" : "cases";
     live.textContent = "Showing " + (CHAPTERS[era] || era) + ", " + count + " " + noun + ".";
+    const work = document.getElementById("work");
+    if (work && grid) {
+      const top = grid.getBoundingClientRect().top;
+      if (top > window.innerHeight * 0.65) {
+        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        work.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+      }
+    }
   }
 }
 
